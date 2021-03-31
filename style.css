@@ -63,12 +63,17 @@ body {
 }
 
 .contact_banner {
+    min-height: 250px;
     padding-left: calc(50% - 390px);
     padding-right: calc(50% - 390px);
+    margin-bottom: 57px;
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(img/Contacts_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contact__banner-text {
@@ -307,14 +312,6 @@ hr {
     opacity: 0.4;
 }
 
-.contact_banner {
-    min-height: 250px;
-    background-image: url(img/Contacts_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 57px;
-}
-
 .connection__contacts {
     display: flex;
     justify-content: space-between;
@@ -409,6 +406,7 @@ hr {
 
 #message {
     padding-top: 21px;
+    margin-bottom: 72px;
     height: 144px;
 }
 
@@ -438,7 +436,8 @@ hr {
 
 .map {
     width: 100%;
-    padding-bottom: 112px;
+    height: 480px;
+    margin-bottom: 112px;
 }
 
 @media (max-width: 1024px) {
@@ -449,6 +448,10 @@ hr {
 
     .header {
         padding-top: 36px;
+    }
+
+    .contacts__header {
+        padding-top: 18px;
     }
 
     .banner {
@@ -518,6 +521,56 @@ hr {
 
     .footer__list li:last-child {
         padding-bottom: 0;
+    }
+
+    .contact_banner {
+        margin-top: 41px;
+        margin-bottom: 64px;
+    }
+
+    .contact__banner-text {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .contacts__container {
+        width: auto;
+    }
+
+    .connection__contacts {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+
+    .connection__info {
+        margin-right: 0;
+        margin-bottom: 64px;
+    }
+
+    .contacts-img {
+        margin-bottom: 64px;
+    }
+
+    .connection__msg {
+        width: 520px;
+    }
+
+    .connection__msg form {
+        padding: 54px;
+    }
+
+    .connection__msg form .connection__heading-mini {
+        max-width: 180px;
+        margin-bottom: 12px;
+    }
+
+    #message {
+        margin-bottom: 70px;
+    }
+
+    .map {
+        margin-bottom: 64px;
+        height: 392px;
     }
 }
 
@@ -666,5 +719,91 @@ hr {
 
     .rights {
         text-align: center;
+    }
+
+    .contacts__header {
+        padding-top: 13px;
+    }
+
+    .contact_banner {
+        margin-top: 38px;
+        margin-bottom: 46px;
+    }
+
+    .contacts__heading {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 32px;
+    }
+
+    .contact__banner-text {
+        font-size: 16px;
+        line-height: 30px;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+    .connection__contacts {
+        margin-bottom: 32px;
+    }
+
+    .info_plate {
+        margin-bottom: 32px;
+    }
+
+    .connection__info {
+        margin-bottom: 32px;
+    }
+
+    .connection__msg {
+        margin-left: 17px;
+        margin-right: 17px;
+        width: auto;
+    }
+
+    .connection__msg form {
+        padding: 36px;
+    }
+
+    .connection__msg form .connection__heading-mini {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 100%;
+        margin-bottom: 31px;
+    }
+
+    .input__label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .input-field {
+        margin-bottom: 20px;
+        font-size: 14px;
+        padding-left: 24px;
+        height: 46px;
+    }
+
+    #message {
+        padding-top: 13px;
+        margin-bottom: 46px;
+        height: 92px;
+    }
+
+    .btn-submit {
+        height: 46px;
+    }
+
+    .map {
+        margin-bottom: 32px;
+        height: 349px;
+    }
+
+    .interested {
+        margin-bottom: 48px;
+    }
+
+    .footer__button {
+        margin-top: 32px;
     }
 }
